@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/profile_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/treatment_layout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/spinner_bg"
+            android:orientation="horizontal"
+            android:id="@+id/relativeLayout">
+
+            <Spinner
+                android:id="@+id/treatment_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/spinner_drop" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/treatment_information"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPhyshome"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/treatment_problem_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlackTransparent"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_action_about"
+                    android:drawableStart="@drawable/ic_action_about"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="6dp"/>
+
+                <TextView
+                    android:id="@+id/treatment_comment_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlackTransparent"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_action_comment"
+                    android:drawableStart="@drawable/ic_action_comment"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="6dp"/>
+                <TextView
+                    android:id="@+id/treatment_doctor_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlackTransparent"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_action_doctor"
+                    android:drawableStart="@drawable/ic_action_doctor"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="6dp"/>
+
+                <TextView
+                    android:id="@+id/treatment_hospital_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlackTransparent"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_action_hospital"
+                    android:drawableStart="@drawable/ic_action_hospital"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="6dp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise_list"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPhyshome"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/treatment_recyclerview_exercise"
+            android:layout_margin="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/drugs"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPhyshome"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/treatment_recyclerview_drug"
+            android:layout_margin="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#fff">
+    <TextView
+        android:id="@+id/exercise_info_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Title"
+        android:textSize="26sp"
+        android:textColor="@color/colorPhyshome"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/exercise_info_imageview"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+    </pl.droidsonroids.gif.GifImageView>
+
+</LinearLayout>

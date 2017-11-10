@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exercise_time_tv"
+        android:textColor="@color/colorPhyshome"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="00:00"
+        />
+
+    <LinearLayout
+        android:id="@+id/exercise_analysis_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="0.25">
+
+            <com.timqi.sectorprogressview.ColorfulRingProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/exercise_limb_pv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:bgColor="#e1e1e1"
+                app:fgColorEnd="@color/colorLightGreen"
+                app:fgColorStart="@color/colorLightGreen"
+                app:percent="0"
+                app:startAngle="0"
+                app:strokeWidth="5dp" />
+
+            <TextView
+                android:id="@+id/exercise_limb_ratio_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/limb"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="0.25">
+
+            <com.timqi.sectorprogressview.ColorfulRingProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/exercise_chest_pv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:bgColor="#e1e1e1"
+                app:fgColorEnd="@color/colorLightGreen"
+                app:fgColorStart="@color/colorLightGreen"
+                app:percent="0"
+                app:startAngle="0"
+                app:strokeWidth="5dp" />
+
+            <TextView
+                android:id="@+id/exercise_chest_ratio_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/chest"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="0.25">
+
+            <com.timqi.sectorprogressview.ColorfulRingProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/exercise_speed_pv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:bgColor="#e1e1e1"
+                app:fgColorEnd="@color/colorPhyshome"
+                app:fgColorStart="@color/colorPhyshome"
+                app:percent="0"
+                app:startAngle="0"
+                app:strokeWidth="5dp" />
+
+            <TextView
+                android:id="@+id/exercise_speed_ratio_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/speed"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="0.25">
+
+            <com.timqi.sectorprogressview.ColorfulRingProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/exercise_completed_pv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:bgColor="#e1e1e1"
+                app:fgColorEnd="@color/colorLightGreen"
+                app:fgColorStart="@color/colorLightGreen"
+                app:percent="0"
+                app:startAngle="0"
+                app:strokeWidth="5dp" />
+
+            <TextView
+                android:id="@+id/exercise_completed_ratio_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="-- / --"
+                android:textStyle="bold"
+                android:textColor="@color/colorOrange"
+                android:textSize="18sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exercise_start_message_tv"
+        android:textColor="@color/colorPhyshome"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:padding="4dp"
+        android:layout_marginTop="10dp"
+        android:text="START"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif_imageview"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/gif_imageview"
+            android:layout_toEndOf="@+id/gif_imageview"
+            android:id="@+id/frameLayout"
+            android:layout_alignBottom="@+id/gif_imageview">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pb_empty_opaque" />
+            <ImageView
+                android:id="@+id/bt_progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pb_full_clip" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true">
+            <ToggleButton
+                android:id="@+id/button_record_exercise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:background="@drawable/blueround_bg"
+                android:textOn="@string/stop_record"
+                android:textOff="@string/start_record"
+                android:layout_weight="0.5"/>
+            <ToggleButton
+                android:id="@+id/button_test"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textOn="@string/stop_exercise"
+                android:textOff="@string/start_exercise"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:background="@drawable/blueround_bg"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

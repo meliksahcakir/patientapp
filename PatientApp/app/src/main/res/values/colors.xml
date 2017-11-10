@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#5bbca7</color>
+    <color name="colorExercise">#F042bed1</color>
+    <color name="colorTreatment">#F0feda6f</color>
+    <color name="colorAchievements">#F01b90f8</color>
+    <color name="colorAlerts">#F04ec66b</color>
+    <color name="colorSettings">#F09deac6</color>
+    <color name="colorLogout">#F0ff7f84</color>
+    <color name="colorPinkTransparent">#C0ff7f84</color>
+    <color name="colorGreenTransparent">#C0008040</color>
+    <color name="colorGrayTransparent">#c0a1a6a3</color>
+    <color name="colorWhiteTransparent">#C0ffffff</color>
+    <color name="colorBlueTransparent">#C01b90f8</color>
+    <color name="colorYellowTransparent">#C0fbf400</color>
+    <color name="colorRedTransparent">#C0fb0000</color>
+    <color name="colorPhyshomeLight">#5bbca7</color>
+    <color name="colorPhyshomeDark">#498aac</color>
+    <color name="colorBlue">#54b6e5</color>
+    <color name="colorBlueMoreTransparent">#6054b6e5</color>
+    <color name="colorBlueGreen">#007872</color>
+    <color name="colorTabSelected">#6e5a24</color>
+    <color name="colorLightGreen">#0ebe01</color>
+    <color name="colorLauncherText">#023e84</color>
+    <color name="darkGray">#3c3f41</color>
+    <color name="colorBlackTransparent">#A0000000</color>
+    <color name="colorOrange">#fd9802</color>
+    <color name="colorPhyshome">#4e8eaa</color>
+</resources>
